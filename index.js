@@ -1,31 +1,12 @@
-const inquirer = require('inquirer');
-const fs = require('fs');
+const { runPrompt } = require('./utils/inquirer');
+const writeToFile = require('./utils/writeToFile');
 const generateMarkdown = require('./utils/generateMarkdown');
+const FILE_PATH = './outputs/README.md'
 
-const questions = [
-    {
-        type: 'input',
-        message: "Enter project title",
-        name: 'title'
-    },
-    {
-        type: 'input',
-        message: 'Enter project description',
-        name: 'description'
-    },
-];
-
-// TODO: Create a function to write README file
-function writeToFile(fileName, data, callback) {
-    fs.writeFile(fileName, data, callback);
-}
-
-// TODO: Create a function to initialize app
 function init() {
-    inquirer.prompt(questions)
-    .then((data) => generateMarkdown(data, function(markdown) {
-        writeToFile('./outputs/README.md', markdown, (err => console.log(err)));
-    }))
+    runPrompt()
+    .then((answers) => generateMarkdown(answers))
+    .then((markdown) => writeToFile(FILE_PATH, markdown))
     .catch((err) => console.log(err));
 }
 
