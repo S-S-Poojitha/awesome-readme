@@ -1,4 +1,5 @@
-const { licenses } = require('./inquirer');
+const { getLicense } = require('./licenses');
+const camelCase = require('./camelCase');
 
 function renderLicenseBadge(license) {
   if (!license) {
@@ -15,7 +16,7 @@ function renderLicenseLink(license) {
     return '';
   }
 
-  return `[Read more](${license.link})`;
+  return `[Learn more](${license.link})`;
 }
 
 // TODO: Create a function that returns the license section of README
@@ -25,7 +26,7 @@ function renderLicenseSection(licenseChoice) {
     return '';
   }
 
-  let license = licenses.find(license => license.name === licenseChoice);
+  let license = getLicense(licenseChoice);
 
   return `## License
 
@@ -48,18 +49,21 @@ function renderSection(title, description) {
 function renderTableofContents(answers) {
   let contents = Object.entries(answers);
   let md = `## Table of Contents\n`;
-  let startNum = 1;
-  // Start at fourth answer object
-  for (var i = 4; i < contents.length; i++) {
+  let counter = 1;
+  // Starts at fourth answer object and iterates through the rest of the answer names
+  for (var i = 5; i < contents.length; i++) {
     let [title,] = contents[i];
-    md += `\n${startNum}. [${title}](#${title})`;
-    startNum++;
+    // Creates list item with href. Example: 1. Installation
+    md += `\n${counter}. [${camelCase(title)}](#${title})`;
+    counter++;
   }
+
+  md += `\n${counter}. [Questions](#questions)`;
 
   return md;
 }
 
-function renderMarkdownTemplate(answers) {
+function generateMarkdown(answers) {
   return `# ${answers.title}
 
 ${answers.description}
@@ -89,17 +93,6 @@ ${answers.tests}
 You can find me on [GitHub](https://github.com/${answers.username}) or, email me at ${answers.email}.
   
 `
-}
-
-// TODO: Create a function to generate markdown for README
-function generateMarkdown(answers) {
-  return new Promise((resolve, reject) => {
-    if (!answers) {
-      reject(new Error('Answers are missing.'))
-    } else {
-      resolve(renderMarkdownTemplate(answers));
-    }
-  });
 }
 
 module.exports = generateMarkdown;

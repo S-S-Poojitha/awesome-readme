@@ -1,5 +1,3 @@
-const inquirer = require('inquirer');
-
 const licenses = [
     {
         name: 'GNU AGPLv3',
@@ -51,59 +49,11 @@ function getLicenseNames() {
     return lNames;
 }
 
-const questions = [
-    {
-        type: 'input',
-        message: 'Enter your Github username',
-        name: 'username'
-    },
-    {
-        type: 'input',
-        message: 'Enter your email address',
-        name: 'email'
-    },
-    {
-        type: 'input',
-        message: "Enter project title",
-        name: 'title'
-    },
-    {
-        type: 'input',
-        message: 'Enter project description',
-        name: 'description'
-    },
-    {
-        type: 'list',
-        choices: getLicenseNames(),
-        name: 'license'
-    },
-    {
-        type: 'input',
-        message: 'Enter installation instructions',
-        name: 'installation'
-    },
-    {
-        type: 'input',
-        message: 'Enter usage information',
-        name: 'usage'
-    },
-    {
-        type: 'input',
-        message: 'Enter test instructions',
-        name: 'tests'
-    },
-    {
-        type: 'input',
-        message: 'Enter contribution guidelines',
-        name: 'contributing'
-    }
-];
-
-async function runPrompt() {
-   return await inquirer.prompt(questions);
+function getLicense(licenseName) {
+    return licenses.find(license => licenseName === license.name);
 }
 
 module.exports = {
-    runPrompt,
-    licenses    
-};
+    getLicense,
+    getLicenseNames,
+}
