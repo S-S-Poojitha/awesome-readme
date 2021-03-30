@@ -4,7 +4,7 @@ A command-line app for creating awesome READMEs.
 
 ## License
 
-  https://img.shields.io/badge/license-MIT_License-blue [Learn more](https://choosealicense.com/licenses/mit/)
+  ![license](https://img.shields.io/badge/license-MIT_License-blue?style=for-the-badge&logo=appveyor) [Learn more](https://choosealicense.com/licenses/mit/)
   
   
 ## Table of Contents
