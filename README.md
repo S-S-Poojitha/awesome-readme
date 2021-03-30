@@ -22,6 +22,8 @@ A command-line app for creating awesome READMEs.
 ## Usage
   
 run with `node index.js`
+
+View a [quick demo](https://youtu.be/j53u4n-RKss)
   
 ## Contributing
   
