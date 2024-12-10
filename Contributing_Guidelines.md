@@ -72,12 +72,7 @@ We appreciate your interest in contributing to our project! To ensure a smooth c
    - Go to your forked repository on GitHub.
    - Click "Compare & Pull Request."
    - Provide a descriptive title and details for your PR.
-
-## Testing
-
-- Ensure all tests pass locally before submitting your PR.
-- Add new tests for your changes, if applicable.
-
+     
 ## Reviewing and Feedback
 
 - Be respectful when providing feedback on PRs.
