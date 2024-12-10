@@ -32,21 +32,6 @@ View a [quick demo](https://youtu.be/j53u4n-RKss)
 
 We appreciate your interest in contributing to our project! To ensure a smooth collaboration, please review and follow these [Contributing Guidelines](./Contributing_Guidelines.md).
 
-## Testing
-
-- Ensure all tests pass locally before submitting your PR.
-- Add new tests for your changes, if applicable.
-
-## Reviewing and Feedback
-
-- Be respectful when providing feedback on PRs.
-- Address any requested changes promptly.
-
-## Acknowledgments
-
-Thank you for your contributions! Your support makes this project better for everyone.
-
-  
 ## Tests
   
 TBD
