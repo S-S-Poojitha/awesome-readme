@@ -30,7 +30,7 @@ View a [quick demo](https://youtu.be/j53u4n-RKss)
 
 # Contributing Guidelines
 
-We appreciate your interest in contributing to our project! To ensure a smooth collaboration, please review and follow these [Contributing Guidelines](https://github.com/S-S-Poojitha/Contributing_Guidelines.md).
+We appreciate your interest in contributing to our project! To ensure a smooth collaboration, please review and follow these [Contributing Guidelines](https://github.com/S-S-Poojitha/awesome-readme/blob/main/Contributing_Guidelines.md).
 
 ## Code Style
 
