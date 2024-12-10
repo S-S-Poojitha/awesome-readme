@@ -32,11 +32,6 @@ View a [quick demo](https://youtu.be/j53u4n-RKss)
 
 We appreciate your interest in contributing to our project! To ensure a smooth collaboration, please review and follow these [Contributing Guidelines](./Contributing_Guidelines.md).
 
-## Code Style
-
-- Follow the style guide outlined in the `CONTRIBUTING.md` or project-specific style documentation.
-- Run linters and formatters before submitting your PR.
-
 ## Testing
 
 - Ensure all tests pass locally before submitting your PR.
