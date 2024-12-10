@@ -12,13 +12,13 @@ We appreciate your interest in contributing to our project! To ensure a smooth c
 2. **Clone the Forked Repository**
 
    ```bash
-   git clone https://github.com/your-username/repository-name.git
+   git clone https://github.com/your-username/awesome-readme.git
    ```
 
 3. **Set Upstream Remote**
 
    ```bash
-   git remote add upstream https://github.com/original-owner/repository-name.git
+   git remote add upstream https://github.com/hagenderouen/awesome-readme.git
    ```
 
 4. **Install Dependencies**
