@@ -25,10 +25,7 @@ run with `node index.js`
 
 View a [quick demo](https://youtu.be/j53u4n-RKss)
   
-## Contributing
-  
-
-# Contributing Guidelines
+## Contributing 
 
 We appreciate your interest in contributing to our project! To ensure a smooth collaboration, please review and follow these [Contributing Guidelines](./Contributing_Guidelines.md).
 
