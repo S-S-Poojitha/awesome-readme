@@ -1,10 +1,9 @@
 # awesome-readme
 
 A command-line app for creating awesome READMEs.
+**Awesome README** was built with speed and simplicity in mind. It enables developers to scaffold a basic README file quickly, reducing setup time and eliminating the need for repetitive manual formatting.  
 
-**Awesome README** was built with speed and simplicity in mind. It enables developers to scaffold a basic README file quickly, reducing setup time and eliminating the need for repetitive manual formatting.
-
-The tool is designed for initial project setup and is not intended for ongoing README updates or maintenance. Its purpose is to jumpstart development by providing a solid starting point, allowing developers to focus on building great software.
+The tool is designed for initial project setup and is **not intended for ongoing README updates or maintenance**. Its purpose is to jumpstart development by providing a solid starting point, allowing developers to focus on building great software.  
 
 ## License
 
