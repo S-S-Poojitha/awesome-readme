@@ -73,11 +73,6 @@ We appreciate your interest in contributing to our project! To ensure a smooth c
    - Click "Compare & Pull Request."
    - Provide a descriptive title and details for your PR.
 
-## Code Style
-
-- Follow the style guide outlined in the `CONTRIBUTING.md` or project-specific style documentation.
-- Run linters and formatters before submitting your PR.
-
 ## Testing
 
 - Ensure all tests pass locally before submitting your PR.
