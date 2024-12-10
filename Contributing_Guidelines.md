@@ -25,10 +25,6 @@ We appreciate your interest in contributing to our project! To ensure a smooth c
 
    - Refer to the `README.md` or other project-specific documentation for installation instructions.
 
-## Code of Conduct
-
-By participating in this project, you agree to uphold our [Code of Conduct](CODE_OF_CONDUCT.md).
-
 ## How to Contribute
 
 ### Reporting Issues
